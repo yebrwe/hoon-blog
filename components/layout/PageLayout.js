@@ -3,7 +3,9 @@ import Sidebar from '@components/common/Sidebar'
 import Header from '@components/layout/Header'
 import Footer from '@components/layout/Footer'
 import styles from './PageLayout.module.css'
+import { useState } from 'react'
 export default function PageLayout({ children }) {
+    const [sidebar, setSidebar] = useState(false);
     return (
         <>
             <Head>
@@ -12,14 +14,18 @@ export default function PageLayout({ children }) {
             </Head>
 
             <main className={styles.layout}>
-                <Header/>
-                <div className="container">
-                    <Sidebar>
-                        사이드바입니다.
-                    </Sidebar>
+                <Header sidebar={sidebar} setSidebar={setSidebar} />
+                <div className={styles.container}>
                     {
-                        children
+                        <Sidebar sidebar={sidebar}>
+                            사이드바입니다.
+                        </Sidebar>                        
                     }
+                    <div className={styles.content}>
+                        {
+                            children
+                        }
+                    </div>
                 </div>
             </main>
 

@@ -1,7 +1,8 @@
-export default  function Sidebar({ children }) {
+import styles from './Sidebar.module.css'
+export default function Sidebar({ sidebar, children }) {
     return (
         <>
-            <div className="sidebar">
+            <div className={`${styles.sidebar} ${sidebar ? styles.wide : ''}`}>
                 {children}
             </div>
         </>
