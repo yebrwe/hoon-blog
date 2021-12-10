@@ -19,7 +19,7 @@ export default function PageLayout({ children }) {
                     {
                         <Sidebar sidebar={sidebar}>
                             사이드바입니다.
-                        </Sidebar>                        
+                        </Sidebar>
                     }
                     <div className={styles.content}>
                         {

@@ -5,4 +5,10 @@
   align-items: center;
   border-bottom: #e7e7e7 solid 1px;
 }
+.bar {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: 25px;
+}
 
