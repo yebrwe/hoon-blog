@@ -9,12 +9,15 @@ export default function PageLayout({ children }) {
     return (
         <>
             <Head>
-                <title>Welcome to blog!</title>
+                <title>Welcome to Hoon's blog!</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main className={styles.layout}>
-                <Header sidebar={sidebar} setSidebar={setSidebar} />
+                <Header
+                    sidebar={sidebar}
+                    setSidebar={setSidebar} 
+                />
                 <div className={styles.container}>
                     {
                         <Sidebar sidebar={sidebar}>

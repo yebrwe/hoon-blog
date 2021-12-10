@@ -7,7 +7,10 @@ export default function Header({ title, sidebar, setSidebar }) {
   }
   return <>
     <header className={styles.header}>
-      <div onClick={ toggleSidebar } className={styles.bar}>
+      <div
+        className={styles.bar}
+        onClick={toggleSidebar}
+      >
         <FontAwesomeIcon icon={faBars}/>
       </div>    
       <h1 className="title">{title}</h1>
