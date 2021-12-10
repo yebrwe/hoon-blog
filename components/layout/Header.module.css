@@ -1,14 +1,16 @@
 .header {
   width: 100%;
+  position: sticky;
+  top: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: #e7e7e7 solid 1px;
+  background-color: white;
 }
 .bar {
   width: 25px;
   height: 25px;
   cursor: pointer;
-  margin-left: 25px;
+  margin: 25px 25px 32px 25px;
 }
-
