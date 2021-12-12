@@ -13,7 +13,7 @@ export async function getStaticProps() {
       recordMap,
       menus,
     },
-    revalidate: 60,
+    revalidate: 1,
   };
 }
 export default function Home({ recordMap, menus }) {
